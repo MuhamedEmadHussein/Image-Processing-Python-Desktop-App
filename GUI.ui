@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1912</width>
+    <height>922</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>851</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Original Image</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLabel" name="original_Image">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>471</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>440</y>
+       <width>871</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>10</y>
+      <width>851</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Output Image</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLabel" name="output_Image">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>471</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>440</y>
+       <width>861</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>181</width>
+      <height>871</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Page 1</string>
+     </attribute>
+     <widget class="QPushButton" name="subtractConstant">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>730</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Subtract Constant</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addConstant">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>670</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add Constant</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Contrast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Contrast</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sliceGrayLevel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>610</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Slice Gray Level</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="changeGrayLevel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Change Gray Level</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="powerLaw">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>490</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Power</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subtractImage">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>790</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Subtract Image</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="subSample">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sub Sample</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Threshold">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Threshold</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="logTransform">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>430</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Log Transform</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="toGray">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>To Gray</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="negativeTransform">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Negative Transform</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resampleUp">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Resample Up</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="revertButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>themes/revertIcon.png</normaloff>themes/revertIcon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Page 2</string>
+     </attribute>
+     <widget class="QPushButton" name="logicalOperation">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Logical Operation</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bitPlaneSlice">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bit Plane Slice</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="specificBitPlaneSlice">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Specific Bit Plane Slice</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="equalizeImage">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Histogram Equalization</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyAverageFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Average Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyMinFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Min Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyMaxFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>430</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyMedianFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>490</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Median Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyweightedAverageFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Weighted Average Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applysharpening1stDerivativeFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>610</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>1st Derivative Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applysharpening2ndDerivativeCompositeLaplacianFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>670</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Composite Laplacian Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applySobelOperatorsFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>730</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sobel Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyRobertsOperatorsFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>790</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Roberts Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="revertButton2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>themes/revertIcon.png</normaloff>themes/revertIcon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Page 3</string>
+     </attribute>
+     <widget class="QPushButton" name="revertButton3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>themes/revertIcon.png</normaloff>themes/revertIcon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyIdealHighPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ideal Highpass Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyButterworthLowPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Butterworth Lowpass Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyIdealLowPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ideal Lowpass Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyGaussianLowPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Gaussian Lowpass Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyButterworthHighPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Butterworth Highpass Filter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="applyGaussianHighPassFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Gaussian Highpass Filter</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1912</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionBrowse"/>
+    <addaction name="actionSave_Image"/>
+   </widget>
+   <widget class="QMenu" name="menuThemes">
+    <property name="title">
+     <string>Themes</string>
+    </property>
+    <addaction name="actionOriginal"/>
+    <addaction name="actionAMOLED"/>
+    <addaction name="actionAqua"/>
+    <addaction name="actionClassic"/>
+    <addaction name="actionConsole"/>
+    <addaction name="actionDarkBlue"/>
+    <addaction name="actionDarkGray"/>
+    <addaction name="actionDarkOrange"/>
+    <addaction name="actionElegantDark"/>
+    <addaction name="actionMacOS"/>
+    <addaction name="actionManjaroMix"/>
+    <addaction name="actionMaterialDark"/>
+    <addaction name="actionNeonButtons"/>
+    <addaction name="actionUbuntu"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuThemes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAMOLED">
+   <property name="text">
+    <string>AMOLED</string>
+   </property>
+  </action>
+  <action name="actionAqua">
+   <property name="text">
+    <string>Aqua</string>
+   </property>
+  </action>
+  <action name="actionClassic">
+   <property name="text">
+    <string>Classic</string>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="text">
+    <string>Console</string>
+   </property>
+  </action>
+  <action name="actionDarkBlue">
+   <property name="text">
+    <string>DarkBlue</string>
+   </property>
+  </action>
+  <action name="actionDarkGray">
+   <property name="text">
+    <string>DarkGray</string>
+   </property>
+  </action>
+  <action name="actionDarkOrange">
+   <property name="text">
+    <string>DarkOrange</string>
+   </property>
+  </action>
+  <action name="actionElegantDark">
+   <property name="text">
+    <string>ElegantDark</string>
+   </property>
+  </action>
+  <action name="actionMacOS">
+   <property name="text">
+    <string>MacOS</string>
+   </property>
+  </action>
+  <action name="actionManjaroMix">
+   <property name="text">
+    <string>ManjaroMix</string>
+   </property>
+  </action>
+  <action name="actionMaterialDark">
+   <property name="text">
+    <string>MaterialDark</string>
+   </property>
+  </action>
+  <action name="actionNeonButtons">
+   <property name="text">
+    <string>NeonButtons</string>
+   </property>
+  </action>
+  <action name="actionUbuntu">
+   <property name="text">
+    <string>Ubuntu</string>
+   </property>
+  </action>
+  <action name="actionBrowse">
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </action>
+  <action name="actionSave_Image">
+   <property name="text">
+    <string>save Image</string>
+   </property>
+  </action>
+  <action name="actionOriginal">
+   <property name="text">
+    <string>Original</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
